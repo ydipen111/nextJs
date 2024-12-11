@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { Suspense } from 'react'
+import MovieList from './movies/MovieList';
+import Loading from './movies/Loading';
 
 export const metadata: Metadata = {
   title: "home page",
@@ -7,9 +9,20 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div>
+    <div className='p-5 space-y-3'>
+      {/* movies list */}
+      <div>
+
+        <h2 className='text-xl'>Home page</h2>
+        <Suspense fallback={<Loading />}>
+          <MovieList />
+        </Suspense>
+
+      </div>
+
+
+      {/* childs */}
       <Childs>
-        hello man
       </Childs>
     </div>
   )
@@ -19,7 +32,7 @@ export default page
 
 const Childs = ({ children }) => {
   return (<div>
-    <h1>Childs</h1>
+    <h1>Welcome to movie list</h1>
     {children}
 
 
