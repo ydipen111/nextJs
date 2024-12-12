@@ -10,12 +10,13 @@ export const metadata: Metadata = {
 };
 
 const getData = async () => {
-  const res = await fetch('https://6758f6c060576a194d129152.mockapi.io/movies', {
-    next: {
-      revalidate: 10 //updaing data in long time not rea time 
-    }
+  const res = await fetch('https://6758f6c060576a194d129152.mockapi.io/movies',
+    //  { next: {
+    //     revalidate: 10 //updaing data in long time not rea time 
+    //   }
 
-  });
+    // }
+  );
   return res.json();
 }
 const MovieList = async () => {
