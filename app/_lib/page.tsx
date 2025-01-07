@@ -1,12 +1,10 @@
 import React from 'react'
 
-const page = () => {
+export default function privateRoute() {
   return (
     <div>
-      services pages
+      privateROutes
 
     </div>
   )
 }
-
-export default page

@@ -1,9 +1,13 @@
 import React from 'react'
 
+export const metadata = {
+  title: 'login-page'
+}
 export default function page() {
   return (
     <div>
-      <h1>About page 1</h1>
+      login
+
 
     </div>
   )

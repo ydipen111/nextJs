@@ -1,13 +1,11 @@
 import React from 'react'
 
-const page = () => {
+export default function lineChart() {
   return (
     <div>
-      somePage
+      <h1>Line Chart</h1>
 
 
     </div>
   )
 }
-
-export default page
