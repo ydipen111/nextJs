@@ -1,10 +1,12 @@
 import React from 'react'
 
-export default function page() {
+const page = () => {
   return (
     <div>
-      first page
+      reviews
 
     </div>
   )
 }
+
+export default page
