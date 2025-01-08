@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function page() {
+export default function defaultCDB() {
   return (
     <div>
-      user pages
 
+      default tsx
     </div>
   )
 }

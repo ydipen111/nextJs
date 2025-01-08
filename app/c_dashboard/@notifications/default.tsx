@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function page() {
+export default function defaultNoti() {
   return (
     <div>
-      user pages
+      notifications
 
     </div>
   )
