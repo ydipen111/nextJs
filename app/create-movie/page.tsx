@@ -1,13 +1,11 @@
 "use client"
 
 import axios from 'axios';
-import { log } from 'console';
-import { Form, useFormik } from 'formik';
+import {  useFormik } from 'formik';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 
 const createMovie = async () => {
-  const [isOpen, Open] = useState();
   const router = useRouter();
   const { handleChange, handleSubmit, values } = useFormik({
     initialValues: {
